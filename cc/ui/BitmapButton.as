@@ -71,10 +71,6 @@ package cc.ui {
 			}
 		}
 		
-		protected function doCallback():void {
-			_callback();
-		}
-		
 		private function handleClick(e:MouseEvent):void {
 			if (_isEnabled) {
 				
@@ -86,7 +82,7 @@ package cc.ui {
 					setDepressedState(!_isDepressed);
 				}
 				
-				doCallback();
+				_callback();
 				
 			}
 		}
